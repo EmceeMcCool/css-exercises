@@ -56,7 +56,17 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  animation-name: pop-up;
+  animation-duration: .5s;
+
 }
+
+@keyframes pop-up {
+  from {top: 100px; opacity: 0%;}
+  to {top: 376px; opacity: 100%;}
+  
+}
+
 
 .backdrop.show {
   opacity: 30%;
